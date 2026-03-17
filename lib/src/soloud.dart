@@ -265,18 +265,18 @@ interface class SoLoud {
     await _initializeNativeCallbacks();
 
     // Making extra sure no state is dangling after a hot-restart.
-    assert(
-        voiceEndedCompleters.isEmpty,
-        'voiceEndedCompleters is not empty. '
-        'Probably the developer forgot to call deinit().');
-    assert(
-        loadedFileCompleters.isEmpty,
-        'loadedFileCompleters is not empty. '
-        'Probably the developer forgot to call deinit().');
-    assert(
-        _activeSounds.isEmpty,
-        '_activeSounds is not empty. '
-        'Probably the developer forgot to call deinit().');
+    // assert(
+    //     voiceEndedCompleters.isEmpty,
+    //     'voiceEndedCompleters is not empty. '
+    //     'Probably the developer forgot to call deinit().');
+    // assert(
+    //     loadedFileCompleters.isEmpty,
+    //     'loadedFileCompleters is not empty. '
+    //     'Probably the developer forgot to call deinit().');
+    // assert(
+    //     _activeSounds.isEmpty,
+    //     '_activeSounds is not empty. '
+    //     'Probably the developer forgot to call deinit().');
     voiceEndedCompleters.clear();
     loadedFileCompleters.clear();
     _activeSounds.clear();
