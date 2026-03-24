@@ -1,3 +1,13 @@
+#### 3.5.4 (22 Mar 2026)
+- remove wasm/js assets for non-web builds#425. Thanks to @adil192
+
+#### 3.5.3 (21 Mar 2026)
+- fix: compilation error on Windows #423
+
+#### 3.5.2 (18 Mar 2026)
+- fix: wire miniaudio backend pause/resume to stop AudioUnit on iOS #406. Thanks to @sbauly
+- updated audio_context example to demostrate how to integrate with `audio_session` and `audio_service`
+
 #### 3.5.1 (14 Mar 2026)
 - `getStreamTimeConsumed` return wrong time for s16le and s8 #419
 - win fix: hang on app exit #413
